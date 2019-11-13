@@ -2,6 +2,3 @@ Plugin 'keith/swift.vim'
 Plugin 'eraserhd/vim-ios'
 Plugin 'b4winckler/vim-objc'
 Plugin 'msanders/cocoa.vim'
-
-UnPlugin 'amirh/HTML-AutoCloseTag'
-Plugin 'heracek/HTML-AutoCloseTag'

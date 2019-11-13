@@ -243,7 +243,7 @@
 
         " HTML {
             if count(g:spf13_bundle_groups, 'html')
-                Plugin 'amirh/HTML-AutoCloseTag'
+                Plugin 'heracek/HTML-AutoCloseTag'
                 Plugin 'hail2u/vim-css3-syntax'
                 Plugin 'gorodinskiy/vim-coloresque'
                 Plugin 'tpope/vim-haml'
