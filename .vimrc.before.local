@@ -1,9 +1,18 @@
 
-    if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc',]
-    endif
+if !exists('g:spf13_bundle_groups')
+    let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc',]
+endif
 
-    " OmniComplete {
-        " Disable omni complete
-        " let g:spf13_no_omni_complete = 1
-    "}
+" OmniComplete {
+    " Disable omni complete
+    " let g:spf13_no_omni_complete = 1
+"}
+
+if count(g:spf13_bundle_groups, 'youcompleteme')
+    let g:ycm_extra_conf_globlist = ['~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/*','!~/*']
+    let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+endif
+
+if count(g:spf13_bundle_groups, 'iOS')
+    let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+endif
