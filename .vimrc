@@ -1,4 +1,4 @@
-" Modeline and Notes {
+" Modeline znd Notes {1
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
 "
 "                    __ _ _____              _
@@ -27,7 +27,7 @@
 "   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 "   See the License for the specific language governing permissions and
 "   limitations under the License.
-" }
+" }1
 
 " Environment {
 
@@ -410,7 +410,7 @@
 
 
     " Find merge conflict markers
-    map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
+    map <leader>fc /\v^[<\|=>]{ 7}( .*\|$)<CR>
 
     " Shortcuts
     " Change Working Directory to that of the current file
@@ -456,7 +456,7 @@
 
 " }
 
-" Plugins {
+" Plugins {1
 
     " GoLang {
         if count(g:spf13_bundle_groups, 'go')
@@ -1032,12 +1032,12 @@
         endif
     " }
 
-    " Wildfire {
+    " Wildfire {3
     let g:wildfire_objects = {
                 \ "*" : ["i'", 'i"', "i)", "i]", "i}", "ip"],
                 \ "html,xml" : ["at"],
                 \ }
-    " }
+    " }3
 
     " vim-airline {
         " Set configuration options for the statusline plugin vim-airline.
@@ -1064,7 +1064,7 @@
 
 
 
-" }
+" }1
 
 " GUI Settings {
 
