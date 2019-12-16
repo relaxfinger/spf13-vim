@@ -215,6 +215,7 @@
                 Plugin 'pangloss/vim-javascript'
                 Plugin 'briancollins/vim-jst'
                 Plugin 'kchmck/vim-coffee-script'
+                Plugin 'mxw/vim-jsx'
             endif
         " }
 

@@ -1,4 +1,4 @@
-colorscheme molokai
+"colorscheme molokai
 
 " NERDTree {
     if isdirectory(expand("~/.vim/bundle/nerdtree"))
@@ -9,3 +9,4 @@ colorscheme molokai
         nmap <F5> :NERDTreeToggle<CR>
     endif
 "}
+
