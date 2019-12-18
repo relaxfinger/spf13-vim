@@ -162,6 +162,9 @@ setup_fork_mode() {
 
 setup_vimplug() {
     program_must_exist "curl"
+    if [ ! -d "$HOME/.vim/autoload" ]; then
+        mkdir -p "$HOME/.vim/autoload"
+    fi
     curl "VIMPLUG_URI" -L > "$HOME/.vim/autoload/plug.vim"
     #sync_repo    "$HOME/.vim/autoload/vim-plug" \
                  #"$VIMPLUG_URI" \
