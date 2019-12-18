@@ -165,7 +165,7 @@ setup_vimplug() {
     if [ ! -e "$HOME/.vim/autoload" ]; then
         mkdir -p "$HOME/.vim/autoload"
     fi
-    curl "VIMPLUG_URI" -L > "$HOME/.vim/autoload/plug.vim"
+    curl "$VIMPLUG_URI" -L > "$HOME/.vim/autoload/plug.vim"
     #sync_repo    "$HOME/.vim/autoload/vim-plug" \
                  #"$VIMPLUG_URI" \
                  #"master" \
