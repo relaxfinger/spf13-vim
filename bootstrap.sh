@@ -19,11 +19,9 @@ app_name='spf13-vim'
 [ -z "$APP_PATH" ] && APP_PATH="$HOME/.spf13-vim-3"
 [ -z "$REPO_URI" ] && REPO_URI='https://github.com/relaxfinger/spf13-vim.git'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='3.0'
-#[ -z "$VIMPLUG_URI" ] && VIMPLUG_URI='https://github.com/junegunn/vim-plug.git'
 [ -z "$VIMPLUG_URI" ] && VIMPLUG_URI='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 debug_mode='0'
 fork_maintainer='1'
-#[ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/gmarik/vundle.git"
 
 ############################  BASIC SETUP TOOLS
 msg() {
@@ -166,12 +164,6 @@ setup_vimplug() {
         mkdir -p "$HOME/.vim/autoload"
     fi
     curl "$VIMPLUG_URI" -L > "$HOME/.vim/autoload/plug.vim"
-    #sync_repo    "$HOME/.vim/autoload/vim-plug" \
-                 #"$VIMPLUG_URI" \
-                 #"master" \
-                 #"vim-plug"
-    #cp "$HOME/.vim/autoload/vim-plug/plug.vim" "$HOME/.vim/autoload/plug.vim"
-    #rm -rf "$HOME/.vim/autoload/vim-plug" >/dev/null 2>&1 
 }
 
 install_plug() {
@@ -210,11 +202,8 @@ setup_fork_mode "$fork_maintainer" \
                 "$APP_PATH" \
                 "$HOME"
 
-#sync_repo       "$HOME/.vim/bundle/vundle" \
-                #"$VUNDLE_URI" \
-                #"master" \
-                #"vundle"
 setup_vimplug
+
 install_plug
 
 msg             "\nThanks for installing $app_name."
