@@ -211,6 +211,7 @@
                 Plug 'pangloss/vim-javascript',{'for':'javascript'}
                 Plug 'briancollins/vim-jst',{'for':'javascript'}
                 Plug 'kchmck/vim-coffee-script',{'for':'javascript'}
+                Plug 'mxw/vim-jsx'
             endif
         " }
 
